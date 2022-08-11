@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+/*親直下の指定*/
+.parent > p {
+	color: green;
+}
+
+/*子孫セレクタ　親セレクタの中に入っているタグの設定*/
+.parent p {
+	color: red;
+}
+
+/*複数のクラスを指定*/
+.abc,
+.def {
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	/*上下左右全て同じmargin*/
+	margin: 10px;
+}
+
+/*defクラスとxyzクラスの両方を持つときの指定*/
+.def.xyz {
+	background-color: red;
+}
+
+/*+で隣のセレクタにスタイルを当てる*/
+/*ex. defクラスのタグの隣にaタグがあったら*/
+.def + a {
+	font-size: 30px;
+}

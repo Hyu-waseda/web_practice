@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* セレクター:p, プロパティ:color, プロパティの値:red*/
+div {
+	/*間隔*/
+	/* どちらも同じ意味 */
+	/* margin-bottom: 200px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 200px; */
+	/* 上右下左 */
+	margin: 200px 200px 200px 200px;
+
+	/*px表記と％表記がある*/
+	/*pxは固定値、%はウィンドウ比率*/
+	/* calcを使うと%とpxで演算可能 */
+	width: calc(100% - 50px);
+	height: 100px;
+	background-color: #000;
+	/*関数を設定して要素を動かす*/
+	/*移動、回転、歪ませる*/
+	transform: translate(-100px, 30px) rotate(45deg) skew(70deg);
+}
+
+p {
+	/*R, G, B, 透明度*/
+	color: hsla(128, 94%, 50%, 0.377);
+	
+	/* 上と下で同じ意味 */
+	/* background-image: url("./HYU\ Photo\ 180.JPG");
+	background-color: blue;
+	background-repeat: no-repeat; */
+	background: url("./HYU\ Photo\ 180.JPG") blue no-repeat;
+
+
+	font-weight: bold;
+	font-size: 80px;
+	/*テキスト冒頭のインデント*/
+	text-indent: 1em;
+	/*行間*/
+	line-height: 4;
+}
+
+/*セレクタ*/
+/*classは一つのHTMLページに複数存在できる*/
+/*idが同じものは存在してはいけない*/
+
+.text {
+	color: green;
+}
+
+/*id*/
+#text {
+	color: red;
+}
+
+/*hover マウスを乗せたときだけスタイルをあてる*/
+a:hover {
+	color: red;
+}
+
