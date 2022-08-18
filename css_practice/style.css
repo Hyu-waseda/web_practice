@@ -1,0 +1,23 @@
+div {
+	color: red;
+	font-size: 5rem;
+	background-color: rgba(202, 223, 14, 0.4);
+	width: calc(100% / 3);
+	/* margin-top: 100px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+	margin-right: 0; */
+	margin: 100px 0 50px 100px;
+}
+
+div p {
+	background-color: black;
+}
+
+.test {
+	background-color: aqua;
+}
+
+.test1 {
+	background-color: white;
+}
