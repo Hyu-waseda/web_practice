@@ -1,23 +1,35 @@
-div {
+/* スコアリング */
+/* #title {
 	color: red;
-	font-size: 5rem;
-	background-color: rgba(202, 223, 14, 0.4);
-	width: calc(100% / 3);
-	/* margin-top: 100px;
-	margin-left: 100px;
-	margin-bottom: 50px;
-	margin-right: 0; */
-	margin: 100px 0 50px 100px;
+}
+.a.b.c.d.e.f.g.h.i.j.k {
+	color: blue;
+}
+h1 {
+	color: orange !important;
+} */
+
+/* 継承 */
+li {
+	color: red;
+}
+li a[href*="google"] {
+	/* 親要素から引き継ぐ */
+	color: inherit;
+}
+li a[href*="youtube"] {
+	/* ブラウザが持つデフォルト値が適応される */
+	color: initial;
+}
+li a[href*="apple"] {
+	/* inheritする値があればinherit、無ければinitial */
+	color: unset;
 }
 
-div p {
-	background-color: black;
+div {
+	background-color: orange;
+	border: 3px solid black;
 }
-
-.test {
-	background-color: aqua;
-}
-
-.test1 {
-	background-color: white;
+.fix {
+	all: unset;
 }
