@@ -1,35 +1,18 @@
-/* スコアリング */
-/* #title {
-	color: red;
-}
-.a.b.c.d.e.f.g.h.i.j.k {
-	color: blue;
-}
-h1 {
-	color: orange !important;
+/* div, span {
+	background-color: orange;
+	width: 100px;
+	height: 100px;
 } */
 
-/* 継承 */
-li {
-	color: red;
+.example {
+	background-color: pink;
+	padding: 20px;
 }
-li a[href*="google"] {
-	/* 親要素から引き継ぐ */
-	color: inherit;
-}
-li a[href*="youtube"] {
-	/* ブラウザが持つデフォルト値が適応される */
-	color: initial;
-}
-li a[href*="apple"] {
-	/* inheritする値があればinherit、無ければinitial */
-	color: unset;
-}
-
-div {
-	background-color: orange;
-	border: 3px solid black;
-}
-.fix {
-	all: unset;
+.example span {
+	/* display: inline; */
+	display: inline-block;
+	margin: 20px;
+	border: 1px solid black;
+	padding: 20px;
+	background-color: lightgreen;
 }
